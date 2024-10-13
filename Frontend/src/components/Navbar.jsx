@@ -3,6 +3,8 @@ import { useState } from "react";
 import Login from "./Login";
 import Logout from "./Logout";
 import { useAuth } from "../context/AuthProvider";
+import { NavLink } from "react-router-dom";
+// import {Navlink} from
 
 function Navbar() {
   const [authUser, setAuthUser] = useAuth();
@@ -39,10 +41,10 @@ function Navbar() {
   const navItems = (
     <>
       <li>
-        <a href="/">Home</a>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <a href="/course">Course</a>
+        <NavLink to="/course">Course</NavLink>
       </li>
     </>
   );
