@@ -11,8 +11,9 @@ function App() {
   console.log(authUser);
   return (
     <>
-      {/* <div className="dark:bg-slate-900 dark:text-white"/> */}
-      <BrowserRouter basename="/">
+    {/* <BrowserRouter basename="/">   */}
+      <div className="dark:bg-slate-900 dark:text-white">
+      
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +24,9 @@ function App() {
           <Route path="/signup" element={<Signup />} />
         </Routes>
         <Toaster />
-        </BrowserRouter>
+        
+      </div>
+      {/* </BrowserRouter> */}
     </>
   );
 }
